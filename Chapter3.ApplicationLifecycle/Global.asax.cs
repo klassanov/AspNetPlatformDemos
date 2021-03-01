@@ -4,6 +4,7 @@ using System.Web.Routing;
 namespace Chapter3.ApplicationLifecycle
 {
     //Instantiated by the ASP.NET framework, called the Global Application class
+    //Used to track ApplicationLifecycle events
     public class MvcApplication : System.Web.HttpApplication
     {
         //Called when the application is started - key moment
