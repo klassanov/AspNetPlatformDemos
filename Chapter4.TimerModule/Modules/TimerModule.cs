@@ -4,8 +4,6 @@ using System.Web;
 
 namespace Chapter4.TimerModule.Modules
 {
-
-
     public class TimerModule : IHttpModule
     {
         /*
@@ -35,9 +33,7 @@ namespace Chapter4.TimerModule.Modules
         /// </summary>
         public void Dispose()
         {
-
         }
-
 
         private void OnBeginRequest(object src, EventArgs args)
         {
