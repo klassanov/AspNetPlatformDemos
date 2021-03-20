@@ -8,7 +8,7 @@ namespace Chapter4.TimerModule.Modules
         {
             application.EndRequest += (src, args) =>
             {
-                HttpContext.Current.Response.Write($" Status code: {HttpContext.Current.Response.Status}");
+                HttpContext.Current.Response.Write($" Response Status: {HttpContext.Current.Response.Status}");
             };
         }
 
