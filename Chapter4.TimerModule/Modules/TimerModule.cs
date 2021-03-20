@@ -46,7 +46,7 @@ namespace Chapter4.TimerModule.Modules
 
         private void OnEndRequest(object src, EventArgs args)
         {
-            string msg = $"Elapsed time: {this.timer.ElapsedMilliseconds} [ms], Status Code: {HttpContext.Current.Response.StatusCode}";
+            string msg = $"Elapsed time: {this.timer.ElapsedMilliseconds} [ms] ";
             HttpContext.Current.Response.Write(msg);
             Debug.WriteLine(msg);
 

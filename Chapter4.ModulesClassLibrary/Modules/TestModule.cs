@@ -9,9 +9,9 @@ namespace Chapter4.ModulesClassLibrary.Modules
      */
     public class TestModule : IHttpModule
     {
-        public void Init(HttpApplication context)
+        public void Init(HttpApplication application)
         {
-            context.EndRequest += (src, args) =>
+            application.EndRequest += (src, args) =>
               {
                   HttpContext.Current.Response.Write("Hello from the TestModule");
               };
