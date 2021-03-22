@@ -114,6 +114,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chapter4.ModulesClassLibrary\Chapter4.ModulesClassLibrary.csproj">
+      <Project>{e94813b9-3cf6-4fb8-85fc-21881a48b545}</Project>
+      <Name>Chapter4.ModulesClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
