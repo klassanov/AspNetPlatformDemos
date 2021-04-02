@@ -21,7 +21,7 @@ namespace Chapter5.Handlers.Infrastructure
 
         public void ProcessRequest(HttpContext context)
         {
-            string msg = $"Today is {DateTime.Now:f}";
+            string msg = $"<h1>Today is {DateTime.Now:f}</h1>";
             context.Response.Write(msg);
         }
 
