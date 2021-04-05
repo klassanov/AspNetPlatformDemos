@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter4.ModuleEvents", "Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter5.Handlers", "Chapter5.Handlers\Chapter5.Handlers.csproj", "{1D9D944B-E06C-40E1-AC83-77D97DBA9201}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter5.HandlersAndModules", "Chapter5.HandlersAndModules\Chapter5.HandlersAndModules.csproj", "{38A8C215-B580-4800-A211-8322247CD6E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,10 @@ Global
 		{1D9D944B-E06C-40E1-AC83-77D97DBA9201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D9D944B-E06C-40E1-AC83-77D97DBA9201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D9D944B-E06C-40E1-AC83-77D97DBA9201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A8C215-B580-4800-A211-8322247CD6E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A8C215-B580-4800-A211-8322247CD6E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A8C215-B580-4800-A211-8322247CD6E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A8C215-B580-4800-A211-8322247CD6E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

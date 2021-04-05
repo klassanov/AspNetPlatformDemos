@@ -1,4 +1,5 @@
 1. Handlers
+------------------------------------------------------------
    1.1 Simple Handler Demo 
 		 - InfoModule commented in web.config
 		 - HandlerFactory commented in web.config
@@ -13,4 +14,53 @@
 		- DateTimeHandler active in web.config
 		- GrnHandlerFactory active in web.config
 		- Start project, url:  ~/handlers/grn with Chrome and Mozilla and observe different handlers used for the same url
+
+
+
+
+
+2. Application and Request Lifecycles, Events subscription
+------------------------------------------------------------
+   2.1 Subscribe for Application_Start(), Application_End(), etc. in the global asax and hit breakpoints
+
+
+
+
+
+
+
+3. Modules
+-----------------------------------------------------------
+   3.1 Simple Module Demo
+		- simple module: get some useful info from the request context object, for ex. which browser users are using
+		- built in modules
+
+   3.2 Modules providing service to Handlers
+		- DateTimeHandler active in web.config
+		- DateTimeModule commented in web.config
+		- Start project, url: ~/datetime
+
+		- DateTimeHandler active in web.config
+		- DateTimeModule active in web.config
+		- Start project, url: ~/datetime
+
+
+   3.3 Modules in a dll
+      - create reference to ModulesClassLibrary the project and start, url: ~/
+
+
+
+
+
+
+
+4. Disrupting the Request Lifecycle
+-----------------------------------------------------------
+   4.1 Optimize a redirection using a module
+   4.2 ?? Manage Handler Selection (Preempting Handler Selection) using a module ??
+   4.3 ?? Redirect from a handler: Transferring a request to a different handler from the selected handler ??
+   4.4 Terminating Requests
+        - stats module
+		- special url module
+
         
