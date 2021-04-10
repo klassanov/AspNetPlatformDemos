@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter5.HandlersAndModules
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo3.Modules", "Demo3.Modules\Demo3.Modules.csproj", "{D56407B7-9008-46DD-A7B1-40036B00B4E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo2.AppAndRequestLifecycles", "Demo2.AppAndRequestLifecycles\Demo2.AppAndRequestLifecycles.csproj", "{C5F18A3C-CC67-4BBA-853E-040E0E721746}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{D56407B7-9008-46DD-A7B1-40036B00B4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D56407B7-9008-46DD-A7B1-40036B00B4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D56407B7-9008-46DD-A7B1-40036B00B4E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F18A3C-CC67-4BBA-853E-040E0E721746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F18A3C-CC67-4BBA-853E-040E0E721746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F18A3C-CC67-4BBA-853E-040E0E721746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F18A3C-CC67-4BBA-853E-040E0E721746}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

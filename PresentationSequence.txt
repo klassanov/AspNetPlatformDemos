@@ -24,8 +24,13 @@
 
 2. Application and Request Lifecycles, Events subscription --> Demo2.AppAndRequestLifecycles project
 ------------------------------------------------------------
-   2.1 Subscribe for Application_Start(), Application_End() Demo 
-        - Start project and hit breakpoints in the global.asax.cs
+   2.1 Application Lifecycle: Application_Start() and Application_End() Demo -> DONE
+		- Hit breakpoints in the Global.asax.cs
+        - Start project url: ~/
+   
+
+   2.2 Request Lifecycle: 
+       - Start project url: ~/Home/Events
 
 
 
@@ -43,7 +48,7 @@ or can separate in projects if needed like Demo3.1.BlaBla
 
    3.2 Built In Modules Demo -> DONE
         - InfoModule active in web.config
-		- Start project url: ~/Home/builtinmodules
+		- Start project url: ~/Home/Builtinmodules
 
    
    3.2 Show all request lifecycle events in the trace log? -> observe the difference when an error is thrown (from Chapter 6. Handling Error Notifications)
