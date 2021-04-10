@@ -36,14 +36,15 @@
 3. Modules --> Demo3.Modules, use 1 project for all the demos and enable/disable modules, use different urls when needed
 or can separate in projects if needed like Demo3.1.BlaBla
 -----------------------------------------------------------
-   3.1 Info Module Demo
+   3.1 Info Module Demo -> DONE
         - InfoModule active in web.config
 		- Start project url: ~/ in Chrome and in Firefox
 
-   3.2 Built In Modules Demo //TODO
-		
-		- simple module: get some useful info from the request context object, for ex. which browser users are using
-		- show built in modules
+
+   3.2 Built In Modules Demo -> DONE
+        - InfoModule active in web.config
+		- Start project url: ~/Home/builtinmodules
+
    
    3.2 Show all request lifecycle events in the trace log? -> observe the difference when an error is thrown (from Chapter 6. Handling Error Notifications)
 		-...

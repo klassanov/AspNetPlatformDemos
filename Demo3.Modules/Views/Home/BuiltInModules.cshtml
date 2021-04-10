@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Demo3.Modules.Models.ModuleInfoModel>
+
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Index</title>
+</head>
+<body>
+    <row>
+        <div>
+            <h1>Built-In Modules</h1>
+        </div>
+    </row>
+    <row>
+        <table class="table table-dark table-striped table-hover table-bordered">
+            <tr>
+                <th>#</th>
+                <th>Module Name</th>
+                <th>Module Type</th>
+            </tr>
+            @{
+                int i = 0;
+                foreach (var moduleInfo in Model)
+                {
+                    <tr>
+                        <td>@(++i)</td>
+                        <td>@moduleInfo.Name</td>
+                        <td>@moduleInfo.Type</td>
+                    </tr>
+                }
+            }
+        </table>
+    </row>
+</body>
+</html>
