@@ -41,8 +41,6 @@
 
 
 
-
-
 3. Modules --> Demo3.Modules, use 1 project for all the demos and enable/disable modules, use different urls when needed
 or can separate in projects if needed like Demo3.1.BlaBla
 -----------------------------------------------------------
@@ -56,12 +54,24 @@ or can separate in projects if needed like Demo3.1.BlaBla
 		- Start project url: ~/Home/Builtinmodules
 
    
-   3.2 Show all request lifecycle events in the trace log? -> observe the difference when an error is thrown (from Chapter 6. Handling Error Notifications)
-		-...
-		-...
-		-...
+   3.3 Show all request lifecycle events in a normal situation and when an error is thrown, the lifecycle changes -> DONE (move as 3.1 and after showing the diagram)
+		- EventsListModule active in web.config
+		- Start project url: ~/Home/EventsList. Observe Output VS window and EventsList view
+		
+		- Start project url: ~/Home/EventsListError. Observe Output VS window and EventsListError view
+		- Observe that the following events
+						PostExecuteRequestHandler
+						ReleaseRequestState
+						PostReleaseRequestState
+						UpdateRequestCache
+						PostUpdateRequestCache
+
+		are never raised, so modules that rely on them and have subsribed for them will never recieve the events 
+		=> these modules maybe can be left in an undesirable state (for ex. cannot release resources)
+		=> we should always handle the Error event in a module in case that the request has encountered problems
    
-   3.3 Optimize a redirection using a module
+
+   3.4 Optimize a redirection using a module
 		-...
 		-...
 		-...

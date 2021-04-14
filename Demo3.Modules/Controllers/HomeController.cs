@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Web.Mvc;
 using Demo3.Modules.Models;
 
@@ -19,6 +20,16 @@ namespace Demo3.Modules.Controllers
                                               .OrderByDescending(x => x.Name);
 
             return View(moduleInfoCollection);
+        }
+
+        public ActionResult EventsList()
+        {
+            return View();
+        }
+
+        public ActionResult EventsListError()
+        {
+            throw new Exception("Testing the Error event");
         }
 
     }
