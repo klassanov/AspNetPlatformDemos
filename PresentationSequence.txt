@@ -1,3 +1,5 @@
+
+
 1. Handlers --> Demo1.Handlers project
 ------------------------------------------------------------
    1.1 Simple Handler Demo
@@ -25,12 +27,15 @@
 2. Application and Request Lifecycles, Events subscription --> Demo2.AppAndRequestLifecycles project
 ------------------------------------------------------------
    2.1 Application Lifecycle: Application_Start() and Application_End() Demo -> DONE
-		- Hit breakpoints in the Global.asax.cs
         - Start project url: ~/
+		- Hit breakpoints in the Global.asax.cs
    
 
-   2.2 Request Lifecycle: 
+   2.2 Request Lifecycle: PostAuthenticateRequest(), AuthorizeRequest(), PostAuthenticateRequest(), AuthorizeRequest() Demo -> DONE
        - Start project url: ~/Home/Events
+       - Hit breakpoints in the Global.asax.cs and explain how the subscription to events is done
+
+
 
 
 

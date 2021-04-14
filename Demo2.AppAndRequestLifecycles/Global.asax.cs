@@ -54,8 +54,7 @@ namespace Demo2.AppAndRequestLifecycles
         //Supplementary method used for storing an event in a list
         private void RecordEvent(string name)
         {
-            List<EventModel> eventsList = Application[Constants.Events] as List<EventModel>;
-            if (eventsList == null)
+            if (!(Application[Constants.Events] is List<EventModel> eventsList))
             {
                 Application[Constants.Events] = eventsList = new List<EventModel>();
             }
