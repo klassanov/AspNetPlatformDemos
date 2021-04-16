@@ -32,5 +32,15 @@ namespace Demo3.Modules.Controllers
             throw new Exception("Testing the Error event");
         }
 
+        public string OldAction()
+        {
+            return "Hello from the OldAction";
+        }
+
+        public string NewAction()
+        {
+            return "Hello from the NewAction";
+        }
+
     }
 }
