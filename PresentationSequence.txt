@@ -74,7 +74,7 @@ or can separate in projects if needed like Demo3.1.BlaBla
    3.4 Optimize a redirection using a module -> DONE
 		- EventsListModule and RedirectModule active in web.config
 		- Start project url in Chrome anonymous mode: ~/Home/OldAction, observe redirection process to ~/Home/NewAction
-		- Show in debug the events executed in the redirected request 
+		- Show in the VS debug window the events executed in the redirected request and in the normal request
 
    3.4 Terminating Requests
         - stats module
