@@ -8,7 +8,6 @@ namespace Demo3.Modules.Modules
         private static List<string> requestUrls = new List<string>();
         private static object lockObject = new object();
 
-
         public void Init(HttpApplication app)
         {
             app.BeginRequest += (src, args) =>
@@ -17,7 +16,15 @@ namespace Demo3.Modules.Modules
                 {
                     if (app.Request.RawUrl.ToLower() == "/stats")
                     {
-                        app.Response.Write($"")
+                        app.Response.Write($"<div>There have been {requestUrls.Count} requests</div>");
+                        app.Response.Write("<table><tr><th>#</th><th>URL</th></tr>");
+                        for (int i = 0; i < requestUrls.Count; i++)
+                        {
+                            app.Response.Write($"<tr><td>{i}</td><td>&nbsp; {requestUrls[i]}</td></tr>");
+                        }
+                        app.Response.Write("</table>");
+
+                        app.CompleteRequest();
                     }
                     else
                     {
