@@ -25,9 +25,9 @@ namespace Demo3.Modules.Modules
         {
             application.BeginRequest += (src, args) =>
             {
-                if (HttpContext.Current.Request.RawUrl.Contains("/Home/OldAction"))
+                if (HttpContext.Current.Request.RawUrl.ToLower().Contains("/home/oldaction"))
                 {
-                    application.Context.Response.Redirect("/Home/NewAction");
+                    application.Context.Response.Redirect("/home/newaction");
                 }
             };
         }

@@ -77,8 +77,8 @@ or can separate in projects if needed like Demo3.1.BlaBla
 		- Show in the VS debug window the events executed in the redirected request and in the normal request
 
    3.4 Terminating Requests
-        - stats module
 		- special url module
+        - stats module
 	    -...
 		-...
 		-...
