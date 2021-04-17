@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Diagnostics;
 using System.Reflection;
 using System.Web;
@@ -7,6 +8,7 @@ namespace Demo3.Modules.Modules
 {
     public class EventsListModule : IHttpModule
     {
+        private static bool logToResponse = bool.Parse(ConfigurationManager.AppSettings["logToResponse"]);
         private int eventNum;
 
         private readonly string[] events =
@@ -80,7 +82,11 @@ namespace Demo3.Modules.Modules
         {
             string msg = $"{++this.eventNum}. {name}";
             Debug.WriteLine(msg);
-            HttpContext.Current.Response.Write(msg + "<br />");
+
+            if (logToResponse)
+            {
+                HttpContext.Current.Response.Write(msg + "<br />");
+            }
         }
 
         public void Dispose()

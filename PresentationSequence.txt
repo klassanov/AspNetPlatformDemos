@@ -76,9 +76,14 @@ or can separate in projects if needed like Demo3.1.BlaBla
 		- Start project url in Chrome anonymous mode: ~/Home/OldAction, observe redirection process to ~/Home/NewAction
 		- Show in the VS debug window the events executed in the redirected request and in the normal request
 
-   3.4 Terminating Requests
-		- special url module
-        - stats module
+   
+   3.5 Terminating Requests by calling CompleteRequest()
+		- DeflectModule and EventsListModule active in web.config
+		- logToResponse = false in web.config
+		- Start project url: ~/ , observe events in VS debug window
+
+
+        - StatsModule and EventsListModule active in web.config
 	    -...
 		-...
 		-...
