@@ -102,6 +102,7 @@
     <Compile Include="Modules\EventsListModule.cs" />
     <Compile Include="Modules\InfoModule.cs" />
     <Compile Include="Modules\RedirectModule.cs" />
+    <Compile Include="Modules\StatsModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
