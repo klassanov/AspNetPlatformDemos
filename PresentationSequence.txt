@@ -1,27 +1,22 @@
 
 1. Handlers --> Demo1.Handlers project
 ------------------------------------------------------------
-   1.1 Simple Handler Demo
-		 - InfoModule commented in web.config
-		 - HandlerFactory commented in web.config
+   1.1 Simple Handler Demo -> DONE
 		 - DateTimeHandler active in web.config
-		 - Start project, urls: ~/,  ~/handlers/datetime
+		 - Start project, urls: ~/,
+		 - Navigate to  ~/handlers/datetime
 		 
-		 - InfoModule active in web.config
-		 - Start project, urls: ~/,  ~/handlers/datetime
+		 - DateTimeHandler, InfoModule active in web.config
+		 - Start project, urls: ~/,
+		 - Navigate to  ~/handlers/datetime
 
 
    
-   1.2 Handler Factory Demo
-		- InfoModule active in web.config
-		- DateTimeHandler active in web.config
-		- GrnHandlerFactory active in web.config
-		- Start project, url:  ~/handlers/grn with Chrome and Mozilla and observe different handlers used for the same url
-
-
-
-
-
+   1.2 Handler Factory Demo -> DONE
+		- DateTimeHandler, InfoModule, GrnHandlerFactory active in web.config
+		- Start project, urls: ~/
+		- Navigate to: ~/handlers/grn with both Chrome and Mozilla and observe different handlers 
+		  instantiated and used for the same url
 
 
 

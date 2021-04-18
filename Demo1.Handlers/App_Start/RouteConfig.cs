@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace Demo1.Handlers
@@ -12,6 +8,10 @@ namespace Demo1.Handlers
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            //By default in MVC for all routes a handler is selected, so we need to ignore this special route
+            //in order to make our custom handler selectable
+            routes.IgnoreRoute("handlers/{*path}");
 
             routes.MapRoute(
                 name: "Default",

@@ -93,9 +93,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handlers\ChromeGrnHandler.cs" />
+    <Compile Include="Handlers\DateTimeHandler.cs" />
+    <Compile Include="Handlers\DefaultGrnHandler.cs" />
+    <Compile Include="Handlers\GrnHandlerFactory.cs" />
+    <Compile Include="Modules\InfoModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -110,7 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
