@@ -104,8 +104,11 @@ or can separate in projects if needed like Demo3.1.BlaBla
 		- Start project, url: ~/datetime
 
 
-   3.8 Common Modules in a separate dll for reusing purposes -> TODO
-      - create reference to ModulesClassLibrary the project and start, url: ~/
+   3.8 Common Modules in a separate dll for reusing purposes (self-registration) -> DONE
+      - Active modules in web.config: none
+	  - Show the CommonModulesClassLibrary, remove the refence to it and then add it 
+	  - Explain the self registering mechanism, put debug points
+	  - Start project url: ~/
 
 
 
