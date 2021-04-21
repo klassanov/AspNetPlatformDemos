@@ -1,7 +1,8 @@
 
+--------------------------------------------------------------------------------------------------------------------
 1. Handlers --> Demo1.Handlers project
-------------------------------------------------------------
-   1.1 Simple Handler Demo -> DONE
+--------------------------------------------------------------------------------------------------------------------
+   1.1 Simple Handler Demo
 		 - DateTimeHandler active in web.config
 		 - Start project, urls: ~/,
 		 - Navigate to  ~/handlers/datetime
@@ -12,7 +13,7 @@
 
 
    
-   1.2 Handler Factory Demo -> DONE
+   1.2 Handler Factory Demo
 		- DateTimeHandler, InfoModule, GrnHandlerFactory active in web.config
 		- Start project, urls: ~/
 		- Navigate to: ~/handlers/grn with both Chrome and Mozilla and observe different handlers 
@@ -20,39 +21,38 @@
 
 
 
+--------------------------------------------------------------------------------------------------------------------
 2. Application and Request Lifecycles, Events subscription --> Demo2.AppAndRequestLifecycles project
-------------------------------------------------------------
-   2.1 Application Lifecycle: Application_Start() and Application_End() Demo -> DONE
+--------------------------------------------------------------------------------------------------------------------
+   2.1 Application Lifecycle: Application_Start() and Application_End() Demo
         - Start project url: ~/
 		- Hit breakpoints in the Global.asax.cs
    
+   
 
-   2.2 Request Lifecycle: PostAuthenticateRequest(), AuthorizeRequest(), PostAuthenticateRequest(), AuthorizeRequest() Demo -> DONE
+   2.2 Request Lifecycle: PostAuthenticateRequest(), AuthorizeRequest(), PostAuthenticateRequest(), AuthorizeRequest() Demo
        - Start project url: ~/Home/Events
        - Hit breakpoints in the Global.asax.cs and explain how the subscription to events is done
 
 
 
-
-
-
-
-3. Modules --> Demo3.Modules, use 1 project for all the demos and enable/disable modules, use different urls when needed
-or can separate in projects if needed like Demo3.1.BlaBla
------------------------------------------------------------
-   3.1 Info Module Demo -> DONE
+--------------------------------------------------------------------------------------------------------------------
+3. Modules --> Demo3.Modules
+--------------------------------------------------------------------------------------------------------------------
+   3.1 Info Module Demo
         - InfoModule active in web.config
 		- Start project url: ~/ in Chrome and in Firefox
 
 
 
-   3.2 Built In Modules Demo -> DONE
+   3.2 Built In Modules Demo
         - InfoModule active in web.config
 		- Start project url: ~/Home/Builtinmodules
 
 
    
-   3.3 Show all request lifecycle events in a normal situation and when an error is thrown, the lifecycle changes -> DONE (move as 3.1 and after showing the diagram)
+   3.3 Show all request lifecycle events in a normal situation and when an error is thrown, the lifecycle changes
+		(move as 3.1 and after showing the diagram)
 		- EventsListModule active in web.config
 		- Start project url: ~/Home/EventsList. Observe Output VS window and EventsList view
 		
@@ -70,14 +70,14 @@ or can separate in projects if needed like Demo3.1.BlaBla
 
    
 
-   3.4 Optimize a redirection using a module -> DONE
+   3.4 Optimize a redirection using a module
 		- EventsListModule and RedirectModule active in web.config
 		- Start project url in Chrome anonymous mode: ~/Home/OldAction, observe redirection process to ~/Home/NewAction
 		- Show in the VS debug window the events executed in the redirected request and in the normal request
 
 
    
-   3.5 Terminating Requests by calling CompleteRequest() -> DONE
+   3.5 Terminating Requests by calling CompleteRequest()
 		- DeflectModule and EventsListModule active in web.config
 		- logToResponse = false in web.config
 		- Start project url: ~/ , observe events in VS debug window
@@ -90,11 +90,14 @@ or can separate in projects if needed like Demo3.1.BlaBla
 
 
 
-   3.6 Events raised and consumed by modules demo -> TODO
+   3.6 Events raised and consumed by modules demo
+		- TimerModule, TotalRequestTimeModule enabled in web.config
+		- Start project url: ~/, refresh a few times, stopping at debug points in order to show the event handling and to accumulate some
+		  response time
 
 
 
-   3.7 Modules providing service to Handlers -> DONE
+   3.7 Modules providing service to Handlers
 		- DateTimeHandler active in web.config
 		- Start project, url: ~/datetime, observe that we do not have the needed information
 
@@ -102,7 +105,8 @@ or can separate in projects if needed like Demo3.1.BlaBla
 		- Start project, url: ~/datetime
 
 
-   3.8 Common Modules in a separate dll for reusing purposes (self-registration) -> DONE
+
+   3.8 Common Modules in a separate dll for reusing purposes (self-registration)
       - Active modules in web.config: none
 	  - Show the CommonModulesClassLibrary, remove the refence to it and then add it 
 	  - Explain the self registering mechanism, put debug points
@@ -111,8 +115,8 @@ or can separate in projects if needed like Demo3.1.BlaBla
 
 
 
-
-4.Tracing requests --> Demo4.TracingRequests project -> TODO
-------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+4.Tracing requests --> Demo4.TracingRequests project
+--------------------------------------------------------------------------------------------------------------------
 
         
