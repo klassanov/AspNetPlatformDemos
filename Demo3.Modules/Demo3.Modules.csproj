@@ -93,11 +93,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handlers\DateTimeHandler.cs" />
+    <Compile Include="Interfaces\IDateTimeHandler.cs" />
     <Compile Include="Models\ModuleInfoModel.cs" />
+    <Compile Include="Modules\DateTimeModule.cs" />
     <Compile Include="Modules\DeflectModule.cs" />
     <Compile Include="Modules\EventsListModule.cs" />
     <Compile Include="Modules\InfoModule.cs" />
@@ -122,12 +126,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CommonModulesClassLibrary\CommonModulesClassLibrary.csproj">
-      <Project>{8fece5c1-f32b-4014-8223-b886f49b56b2}</Project>
-      <Name>CommonModulesClassLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

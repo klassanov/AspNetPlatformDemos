@@ -94,13 +94,11 @@ or can separate in projects if needed like Demo3.1.BlaBla
 
 
 
-   3.7 Modules providing service to Handlers -> TODO
+   3.7 Modules providing service to Handlers -> DONE
 		- DateTimeHandler active in web.config
-		- DateTimeModule commented in web.config
-		- Start project, url: ~/datetime
+		- Start project, url: ~/datetime, observe that we do not have the needed information
 
-		- DateTimeHandler active in web.config
-		- DateTimeModule active in web.config
+		- DateTimeHandler and DateTimeModule active in web.config
 		- Start project, url: ~/datetime
 
 
