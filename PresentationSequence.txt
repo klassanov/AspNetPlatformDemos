@@ -118,5 +118,12 @@
 --------------------------------------------------------------------------------------------------------------------
 4.Tracing requests --> Demo4.TracingRequests project
 --------------------------------------------------------------------------------------------------------------------
-
+	4.1 Built-In Tracing Demo
+	  - Show the system.web/trace element in the web.config
+	  - Start project url: /~
+	  - Click on Home, About, Contact page and then navigate to /~trace.axd and show the trace
+	
+	
+	
+	4.2 Glimpse Demo
         
