@@ -6,6 +6,8 @@ namespace Demo4.TracingRequests.Controllers
     {
         public ActionResult Index()
         {
+            Session["testSessionKey"] = "TestSessionKey";
+
             HttpContext.Trace.Warn("Home controller", "Hello from the Index method. This is a custom trace WARNING message");
             HttpContext.Trace.Write("My custom category", "Hello again");
             HttpContext.Trace.Write("HomeController", "Example Exception", new System.Exception("test exception"));

@@ -126,4 +126,7 @@
 	
 	
 	4.2 Glimpse Demo
+	  - Show the additions to the web.config (1 modile and 1 handler) that Glipmse had made
+	  - Start project url: ~/, navigate to ~/glimpse.axd and enable Glimpse, explain and show the cookie
+	  - Click on Home, About, Contact page and then show the bar below, click on the G letter link and show the results in a separate window
         
