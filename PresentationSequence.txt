@@ -90,7 +90,7 @@
 
 
 
-   3.6 Events raised and consumed by modules demo
+   3.6 Events raised and consumed by modules demo -> NOT PRESENTED
 		- TimerModule, TotalRequestTimeModule enabled in web.config
 		- Start project url: ~/, refresh a few times, stopping at debug points in order to show the event handling and to accumulate some
 		  response time
@@ -98,9 +98,6 @@
 
 
    3.7 Modules providing service to Handlers
-		- DateTimeHandler active in web.config
-		- Start project, url: ~/datetime, observe that we do not have the needed information
-
 		- DateTimeHandler and DateTimeModule active in web.config
 		- Start project, url: ~/datetime
 
