@@ -10,7 +10,6 @@ namespace Demo2.AppAndRequestLifecycles
     //Used to track ApplicationLifecycle events
     public class MvcApplication : System.Web.HttpApplication
     {
-        private Guid instanceId;
 
         /* The technique can be used for events up to PreRequestHandlerExecute. This is because the action method
            in the controller is called between PreRequestHandlerExecute and PostRequestHandlerExecute and so 
@@ -20,15 +19,23 @@ namespace Demo2.AppAndRequestLifecycles
         //Added a constructor in order to be able to subscribe for events
         public MvcApplication()
         {
-            //Way 2. Handling Request Lifecycle events using event subscription
+            //Way 1. Classic event subscription
             PostAuthenticateRequest += (src, args) => RecordEvent("PostAuthenticateRequest");
             AuthorizeRequest += (src, args) => RecordEvent("AuthorizeRequest");
-
-            this.instanceId = Guid.NewGuid();
         }
         #endregion
 
+        //Way 2. Subscribe to events by using special methods -> Appplication_EventName
+        public void Application_BeginRequest(object sender, EventArgs args)
+        {
+            Application[Constants.Events] = new List<EventModel>();
+            RecordEvent("BeginRequest");
+        }
 
+        public void Application_AuthenticateRequest(object sender, EventArgs args)
+        {
+            RecordEvent("AuthenticateRequest");
+        }
 
         #region Application Lifecycle Special Mehtods
         //Called when the application is started - key moment
@@ -54,11 +61,7 @@ namespace Demo2.AppAndRequestLifecycles
         //Supplementary method used for storing an event in a list
         private void RecordEvent(string name)
         {
-            if (!(Application[Constants.Events] is List<EventModel> eventsList))
-            {
-                Application[Constants.Events] = eventsList = new List<EventModel>();
-            }
-
+            List<EventModel> eventsList = Application[Constants.Events] as List<EventModel>;
             eventsList.Add(new EventModel
             {
                 Name = name,

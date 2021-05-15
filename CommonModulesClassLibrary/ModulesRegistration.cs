@@ -6,7 +6,9 @@ namespace CommonModulesClassLibrary
     {
         public static void RegisterAllModules()
         {
-            HttpApplication.RegisterModule(typeof(Modules.ExampleCommonModule));
+            HttpApplication.RegisterModule(typeof(Modules.FirstCommonModule));
+            HttpApplication.RegisterModule(typeof(Modules.SecondCommonModule));
+            HttpApplication.RegisterModule(typeof(Modules.ThirdCommonModule));
         }
     }
 }

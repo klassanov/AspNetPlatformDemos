@@ -24,15 +24,10 @@
 --------------------------------------------------------------------------------------------------------------------
 2. Application and Request Lifecycles, Events subscription --> Demo2.AppAndRequestLifecycles project
 --------------------------------------------------------------------------------------------------------------------
-   2.1 Application Lifecycle: Application_Start() and Application_End() Demo
+   2.1 All in one demo Application Lifecycle: Application_Start(), BeginRequest(), AuthenticateRequest(), PostAuthenticateRequest(), AuthorizeRequest() Application_End()
         - Start project url: ~/
+		- Start project url: ~/Home/Events
 		- Hit breakpoints in the Global.asax.cs
-   
-   
-
-   2.2 Request Lifecycle: PostAuthenticateRequest(), AuthorizeRequest(), PostAuthenticateRequest(), AuthorizeRequest() Demo
-       - Start project url: ~/Home/Events
-       - Hit breakpoints in the Global.asax.cs and explain how the subscription to events is done
 
 
 
@@ -83,14 +78,14 @@
 		- Start project url: ~/ , observe events in VS debug window
 
 
-        - StatsModule and EventsListModule active in web.config
+        - StatsModule and EventsListModule active in web.config --> NOT PRESENTED
 	    - Start project url: ~/
 		- Navigate to some urls: ~/home/oldaction, ~/home/newaction, ~/home/builtinmodules
 		- Navigate to the special url: ~/stats and observe events in VS debug window as well as the web page
 
 
 
-   3.6 Events raised and consumed by modules demo -> NOT PRESENTED
+   3.6 Events raised and consumed by modules demo --> NOT PRESENTED
 		- TimerModule, TotalRequestTimeModule enabled in web.config
 		- Start project url: ~/, refresh a few times, stopping at debug points in order to show the event handling and to accumulate some
 		  response time

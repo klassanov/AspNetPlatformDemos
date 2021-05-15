@@ -7,13 +7,13 @@ namespace CommonModulesClassLibrary.Modules
     * 
     * In order to define a module, we need to reference System.Web
     */
-    public class ExampleCommonModule : IHttpModule
+    public class FirstCommonModule : IHttpModule
     {
         public void Init(HttpApplication application)
         {
             application.EndRequest += (src, args) =>
             {
-                HttpContext.Current.Response.Write("Hello from the ExampleCommonModule");
+                HttpContext.Current.Response.Write("Hello from the FirstCommonModule <br/>");
             };
         }
 
