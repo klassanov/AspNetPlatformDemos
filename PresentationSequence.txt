@@ -3,20 +3,14 @@
 1. Handlers --> Demo1.Handlers project
 --------------------------------------------------------------------------------------------------------------------
    1.1 Simple Handler Demo
-		 - DateTimeHandler active in web.config
-		 - Start project, urls: ~/,
-		 - Navigate to  ~/handlers/datetime
-		 
 		 - DateTimeHandler, InfoModule active in web.config
-		 - Start project, urls: ~/,
-		 - Navigate to  ~/handlers/datetime
+		 - Start project and navigate to  ~/handlers/datetime
 
 
    
    1.2 Handler Factory Demo
 		- DateTimeHandler, InfoModule, GrnHandlerFactory active in web.config
-		- Start project, urls: ~/
-		- Navigate to: ~/handlers/grn with both Chrome and Mozilla and observe different handlers 
+		- Start project and navigate to: ~/handlers/grn with both Chrome and Mozilla and observe different handlers 
 		  instantiated and used for the same url
 
 
@@ -25,9 +19,8 @@
 2. Application and Request Lifecycles, Events subscription --> Demo2.AppAndRequestLifecycles project
 --------------------------------------------------------------------------------------------------------------------
    2.1 All in one demo Application Lifecycle: Application_Start(), BeginRequest(), AuthenticateRequest(), PostAuthenticateRequest(), AuthorizeRequest() Application_End()
-        - Start project url: ~/
-		- Start project url: ~/Home/Events
-		- Hit breakpoints in the Global.asax.cs
+        - Start project and navigate to ~/Home/Events
+
 
 
 
@@ -36,7 +29,7 @@
 --------------------------------------------------------------------------------------------------------------------
    3.1 Info Module Demo
         - InfoModule active in web.config
-		- Start project url: ~/ in Chrome and in Firefox
+		- Start project ~/  in Crome and Firefox
 
 
 
@@ -47,12 +40,15 @@
 
    
    3.3 Show all request lifecycle events in a normal situation and when an error is thrown, the lifecycle changes
-		(move as 3.1 and after showing the diagram)
 		- EventsListModule active in web.config
-		- Start project url: ~/Home/EventsList. Observe Output VS window and EventsList view
+		- Start project and navigate to ~/Home/EventsList 
+		  
+		  Observe Output VS window and EventsList view
 		
-		- Start project url: ~/Home/EventsListError. Observe Output VS window and EventsListError view
-		- Observe that the following events
+		- Navigate to ~/Home/EventsListError
+		  Observe Output VS window and EventsListError view
+		
+		- Observe that the following 5 events
 						PostExecuteRequestHandler
 						ReleaseRequestState
 						PostReleaseRequestState
@@ -67,25 +63,27 @@
 
    3.4 Optimize a redirection using a module
 		- EventsListModule and RedirectModule active in web.config
-		- Start project url in Chrome anonymous mode: ~/Home/OldAction, observe redirection process to ~/Home/NewAction
-		- Show in the VS debug window the events executed in the redirected request and in the normal request
+		- Start project  and navigate to: ~/Home/OldAction, observe redirection process to ~/Home/NewAction
+		  
+		  Observe Output VS window Show in the VS debug window the events executed in the redirected request and in the normal request
 
 
    
    3.5 Terminating Requests by calling CompleteRequest()
 		- DeflectModule and EventsListModule active in web.config
 		- logToResponse = false in web.config
-		- Start project url: ~/ , observe events in VS debug window
+		- Start project and observe events in VS debug window
 
 
-        - StatsModule and EventsListModule active in web.config --> NOT PRESENTED
-	    - Start project url: ~/
+       [NOT PRESENTED]
+	    - StatsModule and EventsListModule active in web.config --> NOT PRESENTED
+	    - Start project and navigate to
 		- Navigate to some urls: ~/home/oldaction, ~/home/newaction, ~/home/builtinmodules
 		- Navigate to the special url: ~/stats and observe events in VS debug window as well as the web page
 
 
-
-   3.6 Events raised and consumed by modules demo --> NOT PRESENTED
+   [NOT PRESENTED]
+   [3.6] Events raised and consumed by modules demo --> NOT PRESENTED
 		- TimerModule, TotalRequestTimeModule enabled in web.config
 		- Start project url: ~/, refresh a few times, stopping at debug points in order to show the event handling and to accumulate some
 		  response time
@@ -94,7 +92,7 @@
 
    3.7 Modules providing service to Handlers
 		- DateTimeHandler and DateTimeModule active in web.config
-		- Start project, url: ~/datetime
+		- Start project and navigate to: ~/handlers/datetime
 
 
 
